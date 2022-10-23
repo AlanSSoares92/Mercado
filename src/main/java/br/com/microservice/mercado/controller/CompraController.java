@@ -21,6 +21,8 @@ public class CompraController {
 	@RequestMapping(method = RequestMethod.POST)
 	public void compra(@RequestBody CompraDTO compra) {
 		
+		compraService.compra(compra);
+		
 	}
 
 }
